@@ -55,7 +55,7 @@ function CreateTorProcess() {
 
   # Add country specific ExitNode to configuration file.
   # shellcheck disable=SC2154
-  echo "ExitNodes {us} StrictNodes 1" > "${_torrc_config}" \
+  echo "ExitNodes {ru} StrictNodes 1" > "${_torrc_config}" \
 
   # shellcheck disable=SC2154
   chmod 0400 "${_torrc_config}" >>"$_log_stdout" 2>&1 && \
